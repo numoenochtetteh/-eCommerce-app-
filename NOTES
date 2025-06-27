@@ -1,0 +1,11 @@
+start by creating VITE WITH REACT 
+ # ✅ 1. npm create vite@latest
+
+##npm create vite@latest 
+
+📌 What It Does:
+Creates a new Vite project in a folder called my-app.
+
+Asks you to choose a framework (like React, Vue, etc.).
+
+Sets up everything (like project structure, config files, and example code).
