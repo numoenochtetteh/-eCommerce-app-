@@ -1,11 +1,105 @@
-start by creating VITE WITH REACT 
- # ✅ 1. npm create vite@latest
+🚀 FULL PROJECT SETUP: VITE + REACT + ROUTER + TOASTIFY + TAILWIND
+
+**start by creating VITE WITH REACT** 
+ # ✅ 1. npm create vite@latest#
 
 ##npm create vite@latest 
 
 📌 What It Does:
 Creates a new Vite project in a folder called my-app.
-
 Asks you to choose a framework (like React, Vue, etc.).
-
 Sets up everything (like project structure, config files, and example code).
+
+#npm install react-router-dom react-toastify
+#npm run dev 
+
+DELECT APP CSS 
+REPLACE EVERYTHIND IN APP CSS WITH RAFCE 
+REMOVE EVERYTHING IN INDEX CSS 
+CHANGE THE NAME IN INDEX HTML  
+
+
+
+#PART 2 ✅ PART 2-- INSTALL TAILWINDCSS 
+follow the step in word 
+
+
+✅PART 3
+You create 3 folders under src PAGES COMPONENTS CONTEXT 
+Under the pages add 
+
+
+✅PART 4 
+you change strictmode tag to BrowerRouter tag in the main.jsx  and import BrowserRouter from react-router-
+
+BULILDING  THE ROUTE 
+
+✅PART 5
+import React from 'react'
+import {Routes,Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Collection from './pages/Collection'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Product from './pages/Product'
+import Login from './pages/Login'
+import Cart from './pages/Cart'
+import Orders from './pages/Orders'
+import PlaceOrder from './pages/PlaceOrder'
+
+const App = () => {
+  return (
+    <div className='px-4 sm:px-[5vw] md:px[7vw] lg:px-[9vw]'>
+       
+       <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/collection' element={<Collection/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/product' element={<Product/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/place-order' element={<PlaceOrder/>}/>
+        <Route path='/orders' element={<Orders/>}/>
+        
+
+       </Routes>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+ ✅✅ PHASE2  ✅✅ ✅✅ 
+buliding the UI navbar 
+CREATE A NAVBAR IN COMPONENTS
+import assets from ../assets/assets
+create a div and img 
+
+ THE CODE 
+
+import React from 'react'
+import {assets} from '../assets/assets'
+
+const Navbar = () => {
+  return (
+    <div className='flex items-center justify-between py-5 font-medium'>
+        <img src={assets.logo} className='w-36' alt="" />
+
+    </div>
+  )
+}
+
+export default Navbar
+
+
+
+
+
+
+
+
+
